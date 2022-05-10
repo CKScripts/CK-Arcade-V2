@@ -1,8 +1,9 @@
 :root {
-  --PrimaryColor: rgb(20,20,20);
-  --SecondaryColor: rgb(25,25,25);
-  --TextColor: rgb(240,240,240);
-  --TextColorHover: rgb(40,140,255);
+  --PrimaryColor: rgb(17,17,17);
+  --SecondaryColor: rgb(22,22,22);
+  --Tertiary: rgb(240,240,240);
+  --Hover: rgb(40,140,255);
+  --Font: "Fredoka";
 }
 body {
   background: var(--PrimaryColor);
@@ -33,18 +34,18 @@ body {
 .NavagationBarLinks >a {
   margin-left: 2vh;
   text-decoration: none;
-  font-family: "Fredoka", sans-serif;
-  color: var(--TextColor);
+  font-family: var(--Font), sans-serif;
+  color: var(--Tertiary);
   font-weight: 300;
   font-size: 2vh;
   transition: color .2s ease-in-out;
 }
 .NavagationBarLinks >a:hover {
-  color: var(--TextColorHover);
+  color: var(--Hover);
 }
 .NavagationBarTitle {
-  font-family: "Fredoka", sans-serif;
-  color: var(--TextColor);
+  font-family: var(--Font), sans-serif;
+  color: var(--Tertiary);
   font-weight: 400;
   font-size: 3vh;
 }
@@ -65,31 +66,27 @@ body {
   padding: 10px 15px;
 }
 .ContentBoxTitle {
-  font-family: "Fredoka", sans-serif;
-  color: var(--TextColor);
+  font-family: var(--Font), sans-serif;
+  color: var(--Tertiary);
   font-weight: 400;
   font-size: 4vh;
 }
 .ContentBoxDescription >p {
-  font-family: "Fredoka", sans-serif;
-  color: var(--TextColor);
+  font-family: var(--Font), sans-serif;
+  color: var(--Tertiary);
   font-weight: 300;
   font-size: 2vh;
 }
 .ContentBoxDescription >a {
   background-color: var(--PrimaryColor);
   text-decoration: none;
-  font-family: "Fredoka", sans-serif;
-  color: var(--TextColor);
+  font-family: var(--Font), sans-serif;
+  color: var(--Tertiary);
   font-weight: 300;
   font-size: 2vh;
   transition: color .2s ease-in-out;
   border-radius: 7%;
   padding: 5px 20px;
-}
-.ContentBoxDescription >a:hover {
-  color: var(--TextColorHover);
-  border-color: var(--TextColorHover);
 }
 .GameScroll {
   background-color: var(--SecondaryColor);
@@ -100,22 +97,23 @@ body {
   padding: 5px 20px;
 }
 .GameScroll >a {
+  display: block;
   text-decoration: none;
-}
-.GameBox {
-  border: 1px solid rgb(240,240,240);
-  margin-left: 2vh;
+  font-family: var(--Font), sans-serif;
+  width: 17vh;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid var(--Tertiary);
+  color: var(--Tertiary);
   border-radius: 5%;
-  width: 11vw;
-  height: 30vh;
-  margin: 15px;
-  font-family: "Fredoka", sans-serif;
-  color: var(--TextColor);
+  transition: color .2s ease-in-out;
 }
 .GameBoxIcon {
-  width: 3vh;
-  height: 3vh;
   border-radius: 5%;
+}
+.GameBoxIcon >img {
+  width: 10vh;
+  height: 10vh;
 }
 .GameBoxTitle {
   font-weight: 400;
