@@ -109,7 +109,6 @@ function createDifficultyList(boxclicked, event) {
     }
 }
 
-
 var NSaddBeatmapList = {
 
         addlikeicon: function(box) {
